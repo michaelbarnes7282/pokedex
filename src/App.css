@@ -22,12 +22,6 @@
   padding-right: 40px;
 }
 
-
-
-.navbar {
-  background-color: #ef5350 !important;
-}
-
 body {
   background-color: transparent !important;
 }
@@ -87,6 +81,14 @@ body {
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
+}
+@media screen and (max-width:400px){
+  .pokemon-info{
+    width:80%;
+  }
+  .header .link {
+    padding: 0;
+  }
 }
 
 .abilites{
