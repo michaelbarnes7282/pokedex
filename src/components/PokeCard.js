@@ -9,7 +9,8 @@ const PokeCard = props => {
         <div className='pokemon-card'>
             <img src= {require(`../sprites/${props.pokemon.entry_number}.png`)} alt=' a pokemon'/>
             <h3 style={{textTransform: 'capitalize'}}>Name: {name}</h3>
-            <button onClick={() => push(`/pokemon/${props.pokemon.entry_number}`)}>More Info</button>
+            <br/>
+            <button className='mx-3' onClick={() => push(`/pokemon/${props.pokemon.entry_number}`)}>More Info</button>
         </div>
     )
 }
