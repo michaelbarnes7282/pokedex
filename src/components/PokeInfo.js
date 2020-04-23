@@ -41,7 +41,7 @@ const PokeInfo = () => {
     useEffect(() => {
         async function fetchPokemon() {
             const response = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${params.id}/`);
-
+            // TODO filter flavor text by english texts and set a description accordingly
             const statRes = await axios.get(`https://pokeapi.co/api/v2/pokemon/${params.id}/`);
             setPokemon(response.data)
             setPokemonStats(statRes.data)
